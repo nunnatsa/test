@@ -12,3 +12,5 @@ jobs:
           ref: master
       - name: Script to check go version
         run: ./test.sh
+        env:
+          GOROOT: "/opt/hostedtoolcache/go/1.15.2/x64"
