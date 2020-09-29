@@ -4,4 +4,4 @@ set -x
 
 go version
 echo "${GOROOT}"
-echo "${GOPATH}"
+ls -la /opt/hostedtoolcache/go/
