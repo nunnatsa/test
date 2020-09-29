@@ -5,3 +5,5 @@ set -x
 go version
 echo "${GOROOT}"
 ls -la /opt/hostedtoolcache/go/
+
+find / -name go -executable
