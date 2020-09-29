@@ -1,14 +1,14 @@
-name: Auto-Bump Component's Versions
+name: Test GO version
 on:
   schedule:
     - cron:  '0/5 * * * *'
 jobs:
   build:
-    name: HCO Release Bump Job
+    name: Test GO version
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
         with:
           ref: master
-      - name: Check for new releases and update
+      - name: Script to check go version
         run: ./test.sh
