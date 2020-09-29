@@ -1,0 +1,14 @@
+name: Auto-Bump Component's Versions
+on:
+  schedule:
+    - cron:  '0/5 * * * *'
+jobs:
+  build:
+    name: HCO Release Bump Job
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+        with:
+          ref: master
+      - name: Check for new releases and update
+        run: ./test.sh
