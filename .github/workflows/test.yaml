@@ -14,3 +14,5 @@ jobs:
         run: ./test.sh
         env:
           GOROOT: "/opt/hostedtoolcache/go/1.15.2/x64"
+        with:
+          go-version: ^1.15
