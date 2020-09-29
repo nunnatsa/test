@@ -1,7 +1,6 @@
 name: Test GO version
 on:
-  schedule:
-    - cron:  '0/5 * * * *'
+  workflow_dispatch:
 jobs:
   build:
     name: Test GO version
